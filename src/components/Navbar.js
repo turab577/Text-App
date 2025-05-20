@@ -42,9 +42,7 @@ export default function Navbar({
             </li>
           </ul>
         </div>
-        <button className="btn btn-primary ms-3" onClick={() => changeBackground('primary')}>Primary</button>
-        <button className="btn btn-danger ms-3" onClick={() => changeBackground('danger')}>Danger</button>
-        <button className="btn btn-light ms-3" onClick={() => changeBackground('light')}>Light</button>
+        <button className="btn btn-light ms-3" onClick={() => changeBackground(`${'dark' ? 'light' : 'dark'}`)}>Light</button>
         <button className="btn btn-dark ms-3" onClick={() => changeBackground('dark')}>Dark</button>
       </div>
     </nav>
